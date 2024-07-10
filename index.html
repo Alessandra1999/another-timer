@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+<div class="container geral">
+    <div class="container timer text-center">
+        <p id="display">horas : minutos : segundos</p>
+            <input type="number" id="hours" min="0" value="00">:
+            <input type="number" id="minutes" min="0" max="59" value="00">:
+            <input type="number" id="seconds" min="0" max="59" value="00">
+        </div>
+
+        <div class="container buttons text-center">
+            <button class="btn btn-custom" id="start">Iniciar</button>
+            <button class="btn btn-custom" id="pause">Pausar</button>
+            <button class="btn btn-custom" id="stop">Parar</button>
+        </div>
+
+    <div class="container relogio text-center">
+        <img src="imagens/relogio.gif" width="150" alt="gif relógio">
+    </div>
+</div>
+
+    <script src="assets/javascript/script.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

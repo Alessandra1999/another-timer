@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Walter Turncoat", cursive;
+    color: #FFF;
+}
+
+body {
+    background: url(/imagens/background.jpg);
+    background-size: cover;
+}
+
+.geral {
+    margin-top: 100px;
+    background-color: #2c359ce3;
+    padding: 15px;
+    width: 600px;
+    border-radius: 20px;
+}
+
+.timer {
+    font-size: 4em;
+    margin-bottom: 30px;
+}
+
+.timer p {
+    font-size: 0.5em;
+}
+
+.timer input {
+    width: 115px;
+    text-align: center;
+    background: none;
+    border: none;
+    -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+.timer ::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.timer input:focus {
+    border: none;
+    outline: none;
+}
+
+.btn-custom {
+    font-size: 1.5em;
+    margin: 0 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #001877;
+}
+
+.btn-custom:hover {
+
+    box-shadow: 0 0 10px #FFF;
+}
+
+.relogio {
+    margin-top: 50px;
+}
