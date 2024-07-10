@@ -13,6 +13,8 @@ function startTimer() {
     if (isRunning) return;
     isRunning = true;
 
+    display.innerHTML = 'horas : minutos : segundos'
+
     interval = setInterval(() => {
         let hours = parseInt(hoursInput.value);
         let minutes = parseInt(minutesInput.value);
@@ -24,7 +26,7 @@ function startTimer() {
             minutes--;
             seconds = 59;
         } else if (hours > 0) {
-            hours--;
+            hours -= 1;
             minutes = 59;
             seconds = 59;
         } else {
