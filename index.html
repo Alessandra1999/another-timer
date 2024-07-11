@@ -13,9 +13,9 @@
 </head>
 
 <body>
-<div class="container geral">
-    <div class="container timer text-center">
-        <p id="display">horas : minutos : segundos</p>
+    <div class="container geral">
+        <div class="container timer text-center">
+            <p id="display">horas : minutos : segundos</p>
             <input type="number" id="hours" min="0" value="00">:
             <input type="number" id="minutes" min="0" value="00">:
             <input type="number" id="seconds" min="0" value="00">
@@ -27,12 +27,15 @@
             <button class="btn btn-custom" id="stop">Parar</button>
         </div>
 
-    <div class="container relogio text-center">
-        <img src="imagens/relogio.gif" width="150" alt="gif relógio">
+        <div class="container relogio text-center">
+            <img src="imagens/relogio.gif" width="150" alt="gif relógio">
+        </div>
     </div>
-</div>
 
-    <script src="assets/javascript/script.js"></script> 
+    <audio id="clock-alarm" src="sounds/clock-alarm-8761.mp3" preload="auto"></audio>
+
+    <script src="assets/javascript/script.js">
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

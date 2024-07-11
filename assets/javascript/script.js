@@ -7,7 +7,8 @@ let stopBtn = document.getElementById('stop');
 let hoursInput = document.getElementById('hours');
 let minutesInput = document.getElementById('minutes');
 let secondsInput = document.getElementById('seconds');
-display = document.getElementById('display');
+let display = document.getElementById('display');
+let alarmSound = document.getElementById('clock-alarm');
 
 function startTimer() {
     if (isRunning) return;
@@ -31,6 +32,7 @@ function startTimer() {
             seconds = 59;
         } else {
             pauseTimer();
+            alarmSound.play();
             display.innerHTML = 'O TEMPO ACABOU!!!';
         }
 
@@ -52,6 +54,8 @@ function stopTimer() {
     hoursInput.value = '00';
     minutesInput.value = '00';
     secondsInput.value = '00';
+    alarmSound.pause();
+    alarmSound.currentTime = 0;
 }
 
 function twoDigits(digit) {
